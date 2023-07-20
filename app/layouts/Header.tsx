@@ -13,12 +13,16 @@ import {
   IconHome,
 } from "@tabler/icons-react";
 import MenuItem from './components/MenuItem';
+import Image from 'next/image';
 
 export default function Header() {
   return (
     <div className='h-20 w-full mx-auto container '>
       <div className='h-full w-full mx-auto container px-20 flex flex-row gap-10 items-center justify-between '>
-        <div>
+        <div className='flex flex-row items-center gap-2'>
+          <Image
+            alt='Natnael Engeda Logo'
+            src='/logo/logo-512x512.png' width={50} height={50} />
           <h1 className='text-3xl font-bold'>Natnael Engeda</h1>
         </div>
         <div>
